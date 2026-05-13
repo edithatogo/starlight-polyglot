@@ -7,6 +7,19 @@ import {
 import { type PolyglotConfig, resolveHandlers } from './core/router';
 import { type MDXOutput } from './core/mdx-generator';
 
+// ─── Canonical type re-exports ───────────────────────────────────────
+export type {
+  Language,
+  Handler,
+  HandlerOptions,
+  MDXOutput as HandlerMDXOutput,
+  ValidationResult,
+} from './core/handler';
+export type { PolyglotConfig } from './core/router';
+export type { SidebarGroup, SidebarItem, HandlerOutput, HandlerPage, MDXFrontmatter, BaseHandlerOptions } from './core/plugin';
+
+// ─── Plugin entry point ──────────────────────────────────────────────
+
 export const sidebarGroup = getSidebarGroupPlaceholder();
 
 export default function polyglot(options: PolyglotConfig): StarlightPlugin {

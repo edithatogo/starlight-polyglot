@@ -1,17 +1,5 @@
 import type { Logger } from '@astrojs/starlight/types';
-import type { Handler } from './plugin';
-
-/**
- * Language identifiers supported by the plugin.
- */
-export type Language =
-  | 'python'
-  | 'typescript'
-  | 'rust'
-  | 'r'
-  | 'julia'
-  | 'csharp'
-  | 'go';
+import type { Language, Handler } from './handler';
 
 /**
  * Per-language handler configuration.

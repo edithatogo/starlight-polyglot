@@ -1,4 +1,11 @@
 import type { StarlightPlugin } from '@astrojs/starlight/types';
+import type { Handler as HandlerContract, HandlerOptions, Language } from './handler';
+
+/**
+ * Re-export the canonical handler types so consumers can import everything
+ * from a single path.
+ */
+export type { HandlerContract, HandlerOptions, Language } from './handler';
 
 /**
  * A symbol-based key used to identify the placeholder sidebar group.
@@ -54,7 +61,7 @@ export interface HandlerOutput {
 }
 
 export interface HandlerPage {
-  /** Relative path within output directory, e.g. "python/voiage.evpi.md" */
+  /** Relative path within output directory, e.g. "python/io.mdx" */
   path: string;
   frontmatter: MDXFrontmatter;
   body: string;
@@ -63,8 +70,11 @@ export interface HandlerPage {
 /**
  * Standardized options passed to every handler.
  * Each language handler may extend this with language-specific options.
+ *
+ * @deprecated Use `HandlerOptions` from `./handler` instead.
+ *   This alias exists for backward compatibility with existing handler implementations.
  */
-export interface BaseHandlerOptions {
+export interface BaseHandlerOptions extends HandlerOptions {
   /** Output subdirectory under src/content/docs/, e.g. "api/python" */
   output: string;
   /** Whether pagination links should be included */
@@ -76,6 +86,9 @@ export interface BaseHandlerOptions {
 /**
  * Handler interface contract.
  * Every language handler MUST implement this interface.
+ *
+ * @deprecated Use `HandlerContract` from `./handler` instead.
+ *   This type alias is maintained for backward compatibility.
  */
 export interface Handler {
   name: string;

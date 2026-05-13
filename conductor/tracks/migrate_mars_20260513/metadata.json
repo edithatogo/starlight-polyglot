@@ -1,0 +1,12 @@
+{
+  "id": "migrate_mars_20260513",
+  "name": "Migrate mars Documentation (MkDocs → Starlight)",
+  "type": "feature",
+  "status": "pending",
+  "phase": 4,
+  "dependsOn": ["self_docs_20260513"],
+  "priority": "must",
+  "created": "2026-05-13",
+  "fulfills": ["REQ-MIG-003", "REQ-MIG-005", "REQ-MIG-006"],
+  "parallel": true
+}

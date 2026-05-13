@@ -1,0 +1,8 @@
+[
+  {
+    "name": "starlight-polyglot",
+    "path": "packages/starlight-polyglot/dist/index.js",
+    "limit": "50 KB",
+    "import": "{ polyglot }"
+  }
+]

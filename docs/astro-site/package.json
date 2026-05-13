@@ -1,0 +1,19 @@
+{
+  "name": "starlight-polyglot-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "latest",
+    "astro": "latest",
+    "starlight-links-validator": "latest",
+    "starlight-versions": "latest",
+    "starlight-llms-txt": "latest",
+    "starlight-polyglot": "workspace:*"
+  }
+}

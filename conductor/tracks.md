@@ -7,120 +7,67 @@
 
 ---
 
-## Phase 0 — Foundation
+## Phase 0: Foundation (Sequential)
 
-### [~] repo_init_20260513
-- **Spec**: [conductor/tracks/repo_init_20260513/spec.md](./tracks/repo_init_20260513/spec.md)
-- **Plan**: [conductor/tracks/repo_init_20260513/plan.md](./tracks/repo_init_20260513/plan.md)
-- **Fulfills**: REQ-CORE-001
+- `[~]` [repo_init_20260513](./tracks/repo_init_20260513/) — GitHub repo + infrastructure
+- `[~]` [conductor_setup_20260513](./tracks/conductor_setup_20260513/) — Conductor system setup
 
-### [ ] conductor_setup_20260513
-- **Spec**: [conductor/tracks/conductor_setup_20260513/spec.md](./tracks/conductor_setup_20260513/spec.md)
-- **Plan**: [conductor/tracks/conductor_setup_20260513/plan.md](./tracks/conductor_setup_20260513/plan.md)
-- **Fulfills**: All REQ-*
+## Phase 1: Core Plugin (Parallel trio after Phase 0)
 
----
+- `[ ]` [plugin_scaffold_20260513](./tracks/plugin_scaffold_20260513/) — npm package scaffold
+- `[ ]` [core_mdx_generator_20260513](./tracks/core_mdx_generator_20260513/) — MDX generation engine
+- `[ ]` [core_router_plugin_20260513](./tracks/core_router_plugin_20260513/) — Router + Starlight hook
 
-## Phase 1 — Core Plugin
+## Phase 2: Handlers (All Parallel)
 
-### [ ] plugin_scaffold_20260513
-- **Spec**: [conductor/tracks/plugin_scaffold_20260513/spec.md](./tracks/plugin_scaffold_20260513/spec.md)
-- **Plan**: [conductor/tracks/plugin_scaffold_20260513/plan.md](./tracks/plugin_scaffold_20260513/plan.md)
-- **Fulfills**: REQ-CORE-001, REQ-DOC-007
-- **Dependencies**: conductor_setup_20260513
+- `[ ]` [handler_python_20260513](./tracks/handler_python_20260513/) — Python handler (Griffe)
+- `[ ]` [handler_typescript_20260513](./tracks/handler_typescript_20260513/) — TypeScript handler (TypeDoc)
+- `[ ]` [handler_rust_20260513](./tracks/handler_rust_20260513/) — Rust handler (rustdoc)
+- `[ ]` [handler_r_20260513](./tracks/handler_r_20260513/) — R handler (roxygen2)
+- `[ ]` [handler_julia_20260513](./tracks/handler_julia_20260513/) — Julia handler (Base.Docs)
+- `[ ]` [handler_csharp_20260513](./tracks/handler_csharp_20260513/) — C# handler (xmldoc)
+- `[ ]` [handler_go_20260513](./tracks/handler_go_20260513/) — Go handler (gomarkdoc)
 
-### [ ] core_mdx_generator_20260513
-- **Spec**: [conductor/tracks/core_mdx_generator_20260513/spec.md](./tracks/core_mdx_generator_20260513/spec.md)
-- **Plan**: [conductor/tracks/core_mdx_generator_20260513/plan.md](./tracks/core_mdx_generator_20260513/plan.md)
-- **Fulfills**: REQ-CORE-004, REQ-CORE-005, REQ-CORE-007
-- **Dependencies**: plugin_scaffold_20260513
+## Phase 3: Quality & Release
 
-### [ ] core_router_plugin_20260513
-- **Spec**: [conductor/tracks/core_router_plugin_20260513/spec.md](./tracks/core_router_plugin_20260513/spec.md)
-- **Plan**: [conductor/tracks/core_router_plugin_20260513/plan.md](./tracks/core_router_plugin_20260513/plan.md)
-- **Fulfills**: REQ-CORE-002, REQ-CORE-003, REQ-CORE-006, REQ-CORE-008..012
-- **Dependencies**: plugin_scaffold_20260513
+- `[ ]` [ci_cd_20260513](./tracks/ci_cd_20260513/) — CI/CD pipelines
+- `[ ]` [tests_20260513](./tracks/tests_20260513/) — Comprehensive test suite
+- `[ ]` [self_docs_20260513](./tracks/self_docs_20260513/) — Self-hosted documentation
 
----
+## Phase 4: Repo Migrations (All Parallel)
 
-## Phase 2 — Handlers
+- `[ ]` [migrate_innovate_20260513](./tracks/migrate_innovate_20260513/) — Migrate innovate docs (Sphinx → Starlight)
+- `[ ]` [migrate_voiage_20260513](./tracks/migrate_voiage_20260513/) — Migrate voiage docs (Sphinx → Starlight)
+- `[ ]` [migrate_mars_20260513](./tracks/migrate_mars_20260513/) — Migrate mars docs (MkDocs → Starlight)
+- `[ ]` [migrate_lifecourse_20260513](./tracks/migrate_lifecourse_20260513/) — Migrate lifecourse docs (from scratch → Starlight)
 
-### [ ] handler_python_20260513
-- **Fulfills**: REQ-PY-001, REQ-PY-002
-- **Dependencies**: core_mdx_generator, core_router_plugin
+## Phase 5: Recursive SOTA
 
-### [ ] handler_typescript_20260513
-- **Fulfills**: REQ-TS-001, REQ-TS-002
-- **Dependencies**: core_mdx_generator, core_router_plugin
-
-### [ ] handler_rust_20260513
-- **Fulfills**: REQ-RS-001, REQ-RS-002
-- **Dependencies**: core_mdx_generator, core_router_plugin
-
-### [ ] handler_r_20260513
-- **Fulfills**: REQ-R-001, REQ-R-002
-- **Dependencies**: core_mdx_generator, core_router_plugin
-
-### [ ] handler_julia_20260513
-- **Fulfills**: REQ-JL-001, REQ-JL-002
-- **Dependencies**: core_mdx_generator, core_router_plugin
-
-### [ ] handler_csharp_20260513
-- **Fulfills**: REQ-CS-001, REQ-CS-002
-- **Dependencies**: core_mdx_generator, core_router_plugin
-
-### [ ] handler_go_20260513
-- **Fulfills**: REQ-GO-001, REQ-GO-002
-- **Dependencies**: core_mdx_generator, core_router_plugin
+- `[ ]` [sota_contract_review_20260513](./tracks/sota_contract_review_20260513/) — SOTA contract definition + audit
 
 ---
 
-## Phase 3 — Quality & Release
+## Cross-Reference
 
-### [ ] ci_cd_20260513
-- **Spec**: [conductor/tracks/ci_cd_20260513/spec.md](./tracks/ci_cd_20260513/spec.md)
-- **Plan**: [conductor/tracks/ci_cd_20260513/plan.md](./tracks/ci_cd_20260513/plan.md)
-- **Fulfills**: REQ-CI-001 through REQ-CI-007
-- **Dependencies**: All Phase 2 handlers
-
-### [ ] tests_20260513
-- **Spec**: [conductor/tracks/tests_20260513/spec.md](./tracks/tests_20260513/spec.md)
-- **Plan**: [conductor/tracks/tests_20260513/plan.md](./tracks/tests_20260513/plan.md)
-- **Fulfills**: REQ-QA-001 through REQ-QA-008, REQ-HDL-001..003
-- **Dependencies**: All Phase 2 handlers
-
-### [ ] self_docs_20260513
-- **Spec**: [conductor/tracks/self_docs_20260513/spec.md](./tracks/self_docs_20260513/spec.md)
-- **Plan**: [conductor/tracks/self_docs_20260513/plan.md](./tracks/self_docs_20260513/plan.md)
-- **Fulfills**: REQ-DOC-001 through REQ-DOC-007
-- **Dependencies**: ci_cd_20260513
-
----
-
-## Phase 4 — Repo Migrations
-
-### [ ] migrate_innovate_20260513
-- **Fulfills**: REQ-MIG-001, REQ-MIG-005, REQ-MIG-006
-- **Dependencies**: self_docs_20260513
-
-### [ ] migrate_voiage_20260513
-- **Fulfills**: REQ-MIG-002, REQ-MIG-005, REQ-MIG-006
-- **Dependencies**: self_docs_20260513
-
-### [ ] migrate_mars_20260513
-- **Fulfills**: REQ-MIG-003, REQ-MIG-005, REQ-MIG-006
-- **Dependencies**: self_docs_20260513
-
-### [ ] migrate_lifecourse_20260513
-- **Fulfills**: REQ-MIG-004, REQ-MIG-005, REQ-MIG-006
-- **Dependencies**: self_docs_20260513
-
----
-
-## Phase 5 — SOTA Review
-
-### [ ] sota_contract_review_20260513
-- **Spec**: [conductor/tracks/sota_contract_review_20260513/spec.md](./tracks/sota_contract_review_20260513/spec.md)
-- **Plan**: [conductor/tracks/sota_contract_review_20260513/plan.md](./tracks/sota_contract_review_20260513/plan.md)
-- **Fulfills**: REQ-SOTA-001 through REQ-SOTA-004
-- **Dependencies**: All Phase 4 migrations
+| Track ID | Phase | Priority | Depends On | Fulfills |
+|----------|-------|----------|------------|----------|
+| repo_init_20260513 | 0 | must | — | REQ-CORE-001 |
+| conductor_setup_20260513 | 0 | must | repo_init_20260513 | REQ-CORE-001, REQ-SOTA-001 |
+| plugin_scaffold_20260513 | 1 | must | conductor_setup_20260513 | REQ-CORE-001 |
+| core_mdx_generator_20260513 | 1 | must | plugin_scaffold_20260513 | REQ-CORE-004, REQ-CORE-005, REQ-CORE-007 |
+| core_router_plugin_20260513 | 1 | must | plugin_scaffold_20260513 | REQ-CORE-002, REQ-CORE-003, REQ-CORE-006, REQ-CORE-008..012 |
+| handler_python_20260513 | 2 | must | core_mdx_generator_20260513, core_router_plugin_20260513 | REQ-PY-001, REQ-PY-002 |
+| handler_typescript_20260513 | 2 | must | core_mdx_generator_20260513, core_router_plugin_20260513 | REQ-TS-001, REQ-TS-002 |
+| handler_rust_20260513 | 2 | must | core_mdx_generator_20260513, core_router_plugin_20260513 | REQ-RS-001, REQ-RS-002 |
+| handler_r_20260513 | 2 | must | core_mdx_generator_20260513, core_router_plugin_20260513 | REQ-R-001, REQ-R-002 |
+| handler_julia_20260513 | 2 | must | core_mdx_generator_20260513, core_router_plugin_20260513 | REQ-JL-001, REQ-JL-002 |
+| handler_csharp_20260513 | 2 | must | core_mdx_generator_20260513, core_router_plugin_20260513 | REQ-CS-001, REQ-CS-002 |
+| handler_go_20260513 | 2 | must | core_mdx_generator_20260513, core_router_plugin_20260513 | REQ-GO-001, REQ-GO-002 |
+| ci_cd_20260513 | 3 | must | All Phase 2 handlers | REQ-CI-001..007 |
+| tests_20260513 | 3 | must | All Phase 2 handlers | REQ-QA-001..008, REQ-HDL-001..003 |
+| self_docs_20260513 | 3 | must | ci_cd_20260513 | REQ-DOC-001..007 |
+| migrate_innovate_20260513 | 4 | must | self_docs_20260513 | REQ-MIG-001, REQ-MIG-005, REQ-MIG-006 |
+| migrate_voiage_20260513 | 4 | must | self_docs_20260513 | REQ-MIG-002, REQ-MIG-005, REQ-MIG-006 |
+| migrate_mars_20260513 | 4 | must | self_docs_20260513 | REQ-MIG-003, REQ-MIG-005, REQ-MIG-006 |
+| migrate_lifecourse_20260513 | 4 | must | self_docs_20260513 | REQ-MIG-004, REQ-MIG-005, REQ-MIG-006 |
+| sota_contract_review_20260513 | 5 | should | All Phase 4 migrations | REQ-SOTA-001..004 |

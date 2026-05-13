@@ -1,0 +1,68 @@
+name: Feature Request
+description: Suggest a new language handler or plugin feature
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! If you're requesting support for a new programming language, please include as much detail as possible about the language's documentation toolchain.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Request type
+      description: What kind of feature are you requesting?
+      options:
+        - New language handler
+        - New plugin feature
+        - Improvement to existing handler
+        - Documentation improvement
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: Language (for new language handler requests)
+      description: Which programming language would you like supported?
+      placeholder: "e.g., Swift, Kotlin, Elixir, Ruby"
+
+  - type: textarea
+    id: toolchain
+    attributes:
+      label: Documentation toolchain (for new language handler requests)
+      description: What tools does this language use to generate documentation? (e.g., JSDoc, rustdoc, pydoc, RDoc, etc.)
+      placeholder: |
+        - Tool name and version
+        - Output format (HTML, JSON, XML, etc.)
+        - How to invoke it from the command line
+        - Example configuration
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: What problem would this feature solve? What use cases does it enable?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the feature or handler you'd like to see. Include configuration examples if applicable.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative solutions
+      description: Describe any alternatives you've considered.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context, links, or screenshots about the feature request here.

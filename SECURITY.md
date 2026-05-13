@@ -2,12 +2,33 @@
 
 ## Reporting a Vulnerability
 
-Please report security vulnerabilities to dylan@mordaunt.dev. You should receive a response within 48 hours. If you do not, please follow up.
+We take the security of starlight-polyglot seriously. If you discover a security vulnerability, please report it by opening a **GitHub Issue** on the [starlight-polyglot repository](https://github.com/edithatogo/starlight-polyglot/issues).
 
-Please include:
-- Description of the vulnerability
-- Steps to reproduce
-- Affected versions
-- Any potential impact
+Please include the following details in your report:
 
-We will acknowledge receipt, investigate, and release a fix as soon as practical.
+- **Description** of the vulnerability
+- **Steps to reproduce** the issue
+- **Affected versions** of starlight-polyglot
+- **Potential impact** of the vulnerability
+
+### What to expect
+
+- We will acknowledge receipt of your report within **48 hours**.
+- We will investigate and provide an initial assessment within **5 business days**.
+- We will work on a fix and coordinate a release timeline.
+- We will credit you in the release notes (unless you prefer to remain anonymous).
+
+### Scope
+
+This policy covers:
+- The `starlight-polyglot` npm package and its published releases.
+- The `starlight-polyglot` GitHub repository and its source code.
+
+### Out of scope
+
+- Vulnerabilities in third-party dependencies (report them to the respective maintainers).
+- The Starlight documentation site (unless it is hosted from this repository).
+- Theoretical vulnerabilities without a practical exploit.
+
+We do not currently support PGP-encrypted reports. Please report via GitHub Issues.
+
