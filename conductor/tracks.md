@@ -9,41 +9,41 @@
 
 ## Phase 0: Foundation (Sequential)
 
-- `[~]` [repo_init_20260513](./tracks/repo_init_20260513/) — GitHub repo + infrastructure
-- `[~]` [conductor_setup_20260513](./tracks/conductor_setup_20260513/) — Conductor system setup
+- `[x]` [repo_init_20260513](./tracks/repo_init_20260513/) (0843c58) — GitHub repo + infrastructure
+- `[x]` [conductor_setup_20260513](./tracks/conductor_setup_20260513/) (0843c58) — Conductor system setup
 
 ## Phase 1: Core Plugin (Parallel trio after Phase 0)
 
-- `[ ]` [plugin_scaffold_20260513](./tracks/plugin_scaffold_20260513/) — npm package scaffold
-- `[ ]` [core_mdx_generator_20260513](./tracks/core_mdx_generator_20260513/) — MDX generation engine
-- `[ ]` [core_router_plugin_20260513](./tracks/core_router_plugin_20260513/) — Router + Starlight hook
+- `[x]` [plugin_scaffold_20260513](./tracks/plugin_scaffold_20260513/) (0843c58) — npm package scaffold
+- `[x]` [core_mdx_generator_20260513](./tracks/core_mdx_generator_20260513/) (0843c58) — MDX generation engine
+- `[x]` [core_router_plugin_20260513](./tracks/core_router_plugin_20260513/) (0843c58) — Router + Starlight hook
 
 ## Phase 2: Handlers (All Parallel)
 
-- `[ ]` [handler_python_20260513](./tracks/handler_python_20260513/) — Python handler (Griffe)
-- `[ ]` [handler_typescript_20260513](./tracks/handler_typescript_20260513/) — TypeScript handler (TypeDoc)
-- `[ ]` [handler_rust_20260513](./tracks/handler_rust_20260513/) — Rust handler (rustdoc)
-- `[ ]` [handler_r_20260513](./tracks/handler_r_20260513/) — R handler (roxygen2)
-- `[ ]` [handler_julia_20260513](./tracks/handler_julia_20260513/) — Julia handler (Base.Docs)
-- `[ ]` [handler_csharp_20260513](./tracks/handler_csharp_20260513/) — C# handler (xmldoc)
-- `[ ]` [handler_go_20260513](./tracks/handler_go_20260513/) — Go handler (gomarkdoc)
+- `[x]` [handler_python_20260513](./tracks/handler_python_20260513/) (0843c58) — Python handler (Griffe)
+- `[x]` [handler_typescript_20260513](./tracks/handler_typescript_20260513/) (0843c58) — TypeScript handler (TypeDoc)
+- `[x]` [handler_rust_20260513](./tracks/handler_rust_20260513/) (0843c58) — Rust handler (rustdoc)
+- `[x]` [handler_r_20260513](./tracks/handler_r_20260513/) (0843c58) — R handler (roxygen2)
+- `[x]` [handler_julia_20260513](./tracks/handler_julia_20260513/) (0843c58) — Julia handler (Base.Docs)
+- `[x]` [handler_csharp_20260513](./tracks/handler_csharp_20260513/) (0843c58) — C# handler (xmldoc)
+- `[x]` [handler_go_20260513](./tracks/handler_go_20260513/) (0843c58) — Go handler (gomarkdoc)
 
 ## Phase 3: Quality & Release
 
-- `[ ]` [ci_cd_20260513](./tracks/ci_cd_20260513/) — CI/CD pipelines
-- `[ ]` [tests_20260513](./tracks/tests_20260513/) — Comprehensive test suite
-- `[ ]` [self_docs_20260513](./tracks/self_docs_20260513/) — Self-hosted documentation
+- `[x]` [ci_cd_20260513](./tracks/ci_cd_20260513/) (0843c58) — CI/CD pipelines
+- `[x]` [tests_20260513](./tracks/tests_20260513/) (0843c58) — Comprehensive test suite
+- `[x]` [self_docs_20260513](./tracks/self_docs_20260513/) (0843c58) — Self-hosted documentation
 
 ## Phase 4: Repo Migrations (All Parallel)
 
-- `[ ]` [migrate_innovate_20260513](./tracks/migrate_innovate_20260513/) — Migrate innovate docs (Sphinx → Starlight)
-- `[ ]` [migrate_voiage_20260513](./tracks/migrate_voiage_20260513/) — Migrate voiage docs (Sphinx → Starlight)
-- `[ ]` [migrate_mars_20260513](./tracks/migrate_mars_20260513/) — Migrate mars docs (MkDocs → Starlight)
-- `[ ]` [migrate_lifecourse_20260513](./tracks/migrate_lifecourse_20260513/) — Migrate lifecourse docs (from scratch → Starlight)
+- `[x]` [migrate_innovate_20260513](./tracks/migrate_innovate_20260513/) (b11f0d3) — Migrate innovate docs (Sphinx → Starlight)
+- `[x]` [migrate_voiage_20260513](./tracks/migrate_voiage_20260513/) (778cc8c) — Migrate voiage docs (Sphinx → Starlight)
+- `[x]` [migrate_mars_20260513](./tracks/migrate_mars_20260513/) (e8ed3b8) — Migrate mars docs (MkDocs → Starlight)
+- `[x]` [migrate_lifecourse_20260513](./tracks/migrate_lifecourse_20260513/) (b9355f0) — Migrate lifecourse docs (from scratch → Starlight)
 
 ## Phase 5: Recursive SOTA
 
-- `[ ]` [sota_contract_review_20260513](./tracks/sota_contract_review_20260513/) — SOTA contract definition + audit
+- `[x]` [sota_contract_review_20260513](./tracks/sota_contract_review_20260513/) (ff5823a) — SOTA contract definition + audit (44/44 pass, 100%)
 
 ---
 
