@@ -45,7 +45,7 @@ function makePolyglotPlugin(sidebarGroup: SidebarGroup) {
           for (const handler of handlers) {
             try {
               logger.info(`[starlight-polyglot] Generating ${handler.name} documentation...`);
-              const output = await handler.generate(handler.options);
+              const output = await handler.handler.generate(handler.options);
               outputs.push(output);
               logger.info(`[starlight-polyglot] ✓ ${handler.name}: ${output.pages.length} pages generated`);
             } catch (error) {

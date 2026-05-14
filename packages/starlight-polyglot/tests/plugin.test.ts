@@ -236,11 +236,4 @@ describe('starlight-polyglot plugin', () => {
       expect(group1._key).not.toBe(group2._key);
     });
   });
-
-    it('produces unique keys each call', () => {
-      const [, group1] = createPolyglotPlugin();
-      const [, group2] = createPolyglotPlugin();
-      expect(group1._key).not.toBe(group2._key);
-    });
-  });
 });
