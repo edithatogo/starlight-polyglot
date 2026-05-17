@@ -32,6 +32,13 @@ export interface PolyglotConfig {
   kotlin?: HandlerConfig;
   cpp?: HandlerConfig;
   swift?: HandlerConfig;
+  stata?: HandlerConfig;
+  sas?: HandlerConfig;
+  scala?: HandlerConfig;
+  ruby?: HandlerConfig;
+  dart?: HandlerConfig;
+  php?: HandlerConfig;
+  elixir?: HandlerConfig;
   [key: string]: HandlerConfig | undefined;
 }
 
@@ -97,6 +104,16 @@ function getHandlerMap(): Partial<Record<Language, Handler>> {
     kotlin: lazyHandler('kotlin'),
     cpp: lazyHandler('cpp'),
     swift: lazyHandler('swift'),
+    // Phase 3 handlers — Data science & scripting
+    stata: lazyHandler('stata'),
+    sas: lazyHandler('sas'),
+    // Phase 4 handlers — JVM/CLR ecosystem
+    scala: lazyHandler('scala'),
+    // Phase 5 handlers — Dynamic & functional languages
+    ruby: lazyHandler('ruby'),
+    dart: lazyHandler('dart'),
+    php: lazyHandler('php'),
+    elixir: lazyHandler('elixir'),
   };
 }
 

@@ -53,6 +53,24 @@
 
 ---
 
+
+## Phase 6: Phase 2+ Handlers & Scripts (Mostly In Progress)
+
+- `[~]` [handler_java_20260517](./tracks/handler_java_20260517/) — Java handler (javadoc-json)
+- `[~]` [handler_kotlin_20260517](./tracks/handler_kotlin_20260517/) — Kotlin handler (Dokka)
+- `[~]` [handler_cpp_20260517](./tracks/handler_cpp_20260517/) — C++ handler (Doxygen XML)
+- `[~]` [handler_swift_20260517](./tracks/handler_swift_20260517/) — Swift handler (DocC)
+- `[~]` [handler_stata_20260517](./tracks/handler_stata_20260517/) — Stata handler (help system)
+- `[~]` [handler_sas_20260517](./tracks/handler_sas_20260517/) — SAS handler (documentation macros)
+- `[~]` [handler_scala_20260517](./tracks/handler_scala_20260517/) — Scala handler (Scaladoc)
+- `[~]` [handler_ruby_20260517](./tracks/handler_ruby_20260517/) — Ruby handler (YARD)
+- `[~]` [handler_dart_20260517](./tracks/handler_dart_20260517/) — Dart handler (dartdoc)
+- `[~]` [handler_php_20260517](./tracks/handler_php_20260517/) — PHP handler (phpDocumentor)
+- `[~]` [handler_elixir_20260517](./tracks/handler_elixir_20260517/) — Elixir handler (ExDoc)
+- `[~]` [extraction_scripts_20260517](./tracks/extraction_scripts_20260517/) — Extraction scripts for Rust, TypeScript, Go
+- `[~]` [extraction_scripts_2_20260517](./tracks/extraction_scripts_2_20260517/) — Extraction scripts for Stata, SAS, Scala, Ruby, Dart, PHP, Elixir
+
+
 ## Phase 6: Phase 2+ Handlers & Scripts (In Progress)
 
 - `[~]` [handler_java_20260517](./tracks/handler_java_20260517/) — Java handler (javadoc-json)

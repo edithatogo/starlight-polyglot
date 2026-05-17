@@ -22,7 +22,14 @@ export type Language =
   | 'java'
   | 'kotlin'
   | 'cpp'
-  | 'swift';
+  | 'swift'
+  | 'stata'
+  | 'sas'
+  | 'scala'
+  | 'ruby'
+  | 'dart'
+  | 'php'
+  | 'elixir';
 
 /**
  * A single MDX output page produced by a handler.
