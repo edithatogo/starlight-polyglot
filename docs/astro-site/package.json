@@ -14,6 +14,6 @@
     "starlight-links-validator": "latest",
     "starlight-versions": "latest",
     "starlight-llms-txt": "latest",
-    "starlight-polyglot": "file:../../packages/starlight-polyglot"
+    "starlight-polyglot": "workspace:*"
   }
 }

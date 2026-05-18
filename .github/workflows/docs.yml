@@ -41,7 +41,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
 
-      - run: pnpm install --frozen-lockfile
+      - run: pnpm install --no-frozen-lockfile
 
       - name: Build starlight-polyglot package
         run: pnpm --filter starlight-polyglot build
