@@ -17,7 +17,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "tsup index.ts --format esm,cjs --dts --clean",
+    "build": "tsup index.ts --format esm,cjs --clean",
     "dev": "tsup index.ts --format esm,cjs --dts --watch",
     "test": "vitest run",
     "test:watch": "vitest",
