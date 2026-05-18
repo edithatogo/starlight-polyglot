@@ -3,7 +3,7 @@ import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
 import starlightVersions from 'starlight-versions';
 import starlightLlmsTxt from 'starlight-llms-txt';
-import polyglot, { sidebarGroup } from 'starlight-polyglot';
+import polyglot, { sidebarGroup } from '@edithatogo/starlight-polyglot';
 
 export default defineConfig({
   site: 'https://edithatogo.github.io',
