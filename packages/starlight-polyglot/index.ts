@@ -48,7 +48,8 @@ function makePolyglotPlugin(sidebarGroup: SidebarGroup) {
           for (const handler of handlers) {
             try {
               logger.info(`[starlight-polyglot] Generating ${handler.name} documentation...`);
-              const output = await handler.handler.generate(handler.options);
+              const handlerOptions = handler.options as Parameters<typeof handler.handler.generate>[0];
+              const output = await handler.handler.generate(handlerOptions);
               outputs.push(output);
               logger.info(`[starlight-polyglot] ✓ ${handler.name}: ${output.pages.length} pages generated`);
             } catch (error) {
@@ -56,6 +57,10 @@ function makePolyglotPlugin(sidebarGroup: SidebarGroup) {
               throw error;
             }
           }
+          // Merge sidebars from all handlers
+          updateConfig({
+            sidebar: mergeSidebars(config.sidebar, sidebarGroup, outputs) as any,
+          });
 
           // Merge sidebars from all handlers
           updateConfig({
